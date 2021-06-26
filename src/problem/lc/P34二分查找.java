@@ -1,6 +1,6 @@
 package problem.lc;
 
-public class P34二分查找_4星 {
+public class P34二分查找 {
     public int[] searchRange(int[] nums, int target) {
         int leftIdx = binarySearch(nums, target, true);
         int rightIdx = binarySearch(nums, target, false) - 1;

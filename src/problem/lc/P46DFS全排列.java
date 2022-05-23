@@ -3,7 +3,7 @@ package problem.lc;
 import java.util.ArrayList;
 import java.util.List;
 
-public class P46 {
+public class P46DFS全排列 {
     public static void main(String[] args) {
 
     }

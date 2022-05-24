@@ -4,36 +4,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class P46DFS全排列 {
-    public static void main(String[] args) {
-
-    }
-
-    public static List<List<Integer>> permute(int[] nums) {
-        int len = nums.length;
-        boolean[] used = new boolean[len];
-        List<Integer> path = new ArrayList<>();
+    public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
-
-        dfs(nums, len, 0, used, path, res);
+        List<Integer> cur = new ArrayList<>();
+        boolean[] visited = new boolean[nums.length];
+        dfs(res, cur, nums, visited);
         return res;
     }
 
-    // 全排列采用DFS深度优先遍历来做
-    public static void dfs(int[] nums, int len, int depth, boolean[] used,
-                           List<Integer> path, List<List<Integer>> res) {
-        if (path.size() == len) {
-            res.add(new ArrayList<>(path));
-            return ;
-        }
-        for(int i = 0; i < len; i++) {
-            if (!used[i]) {
-                path.add(nums[i]);
-                used[i] = true;
-
-                dfs(nums, len, depth + 1, used, path, res);
-                used[i] = false;
-                path.remove(path.size() - 1);
+    public void dfs(List<List<Integer>> res, List<Integer> cur, int[] nums, boolean[] visited) {
+        for (int i = 0; i < nums.length; i++) {
+            if (visited[i] == true) {
+                continue;
             }
+            visited[i] = true;
+            cur.add(nums[i]);
+            if (cur.size() == nums.length) {
+                res.add(new ArrayList<>(cur));
+            } else {
+                dfs(res, cur, nums, visited);
+            }
+            cur.remove(cur.size()-1);
+            visited[i] = false;
         }
     }
 }

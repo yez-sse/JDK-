@@ -1,4 +1,4 @@
-package problem.lc;
+package problem.lc.lc1;
 
 public class P35二分查找 {
     public int binarySearch(int[] nums, int target) {

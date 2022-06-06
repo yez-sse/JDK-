@@ -1,4 +1,4 @@
-package problem.lc;
+package problem.lc.lc1;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package problem.lc;
+package problem.lc.lc1;
 
 public class P34二分查找 {
     public int[] searchRange(int[] nums, int target) {

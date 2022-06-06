@@ -1,4 +1,4 @@
-package problem.lc;
+package problem.lc.lc1;
 
 public class P26 {
     public static void main(String[] args) {

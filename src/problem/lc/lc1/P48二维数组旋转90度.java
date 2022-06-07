@@ -1,6 +1,6 @@
 package problem.lc.lc1;
 
-public class P48二维数组 {
+public class P48二维数组旋转90度 {
 //    public void rotate(int[][] matrix) {
 //        int len = matrix.length;
 //        for (int i = 0; i < len; i++) {

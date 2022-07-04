@@ -1,5 +1,7 @@
 package problem.lc.lc1;
 
+import java.util.Arrays;
+
 public class P63不同的路径II_动态规划 {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         if (obstacleGrid[obstacleGrid.length - 1][obstacleGrid[0].length - 1] == 1) {

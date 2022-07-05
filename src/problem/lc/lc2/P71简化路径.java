@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class p71简化路径 {
+public class P71简化路径 {
 
     public static void main(String[] args) {
         String path = "/home//foo/";

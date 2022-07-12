@@ -2,10 +2,7 @@ package problem.lc.lc2;
 
 import problem.prob.TreeNode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class P102二叉树层序遍历 {
     public List<List<Integer>> levelOrder(TreeNode root) {
@@ -27,6 +24,7 @@ public class P102二叉树层序遍历 {
             }
             res.add(tempList);
         }
+//        Collections.reverse(res);
         return res;
     }
 

@@ -1,4 +1,4 @@
-package problem.lc.lc2;
+package problem.lc.lc1;
 
 public class P74搜索二维矩阵 {
     public boolean searchMatrix(int[][] matrix, int target) {

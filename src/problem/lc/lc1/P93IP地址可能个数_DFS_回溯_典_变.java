@@ -1,4 +1,4 @@
-package problem.lc.lc2;
+package problem.lc.lc1;
 
 import java.util.ArrayList;
 import java.util.List;

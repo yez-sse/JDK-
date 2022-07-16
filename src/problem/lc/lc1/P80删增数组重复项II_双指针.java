@@ -1,4 +1,4 @@
-package problem.lc.lc2;
+package problem.lc.lc1;
 
 public class P80删增数组重复项II_双指针 {
     public int removeDuplicates(int[] nums) {

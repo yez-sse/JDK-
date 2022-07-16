@@ -1,4 +1,4 @@
-package problem.lc.lc2;
+package problem.lc.lc1;
 
 public class P91_解码方法_动态规划_典 {
 

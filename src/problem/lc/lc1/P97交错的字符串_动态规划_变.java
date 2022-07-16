@@ -1,4 +1,4 @@
-package problem.lc.lc2;
+package problem.lc.lc1;
 
 public class P97交错的字符串_动态规划_变 {
     public static void main(String[] args) {

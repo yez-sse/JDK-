@@ -1,4 +1,4 @@
-package problem.lc.lc2;
+package problem.lc.lc1;
 
 public class P79单词搜索_DFS_回溯_典 {
 

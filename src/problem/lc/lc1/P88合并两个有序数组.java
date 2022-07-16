@@ -1,4 +1,4 @@
-package problem.lc.lc2;
+package problem.lc.lc1;
 
 public class P88合并两个有序数组 {
     public static void main(String[] args) {

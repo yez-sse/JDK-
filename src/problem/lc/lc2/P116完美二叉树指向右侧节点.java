@@ -1,6 +1,6 @@
 package problem.lc.lc2;
 
-import problem.prob.Node;
+import problem.struct.Node;
 
 import java.util.LinkedList;
 import java.util.Queue;

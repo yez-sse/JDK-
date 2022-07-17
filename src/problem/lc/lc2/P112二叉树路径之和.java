@@ -1,9 +1,8 @@
 package problem.lc.lc2;
 
-import problem.prob.TreeNode;
+import problem.struct.TreeNode;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class P112二叉树路径之和 {

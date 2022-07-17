@@ -1,6 +1,6 @@
 package problem.lc.lc1;
 
-import problem.one.ListNode;
+import problem.struct.ListNode;
 
 public class P61旋转链表 {
     public ListNode rotateRight(ListNode head, int k) {

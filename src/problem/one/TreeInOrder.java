@@ -1,6 +1,6 @@
 package problem.one;
 
-import problem.prob.TreeNode;
+import problem.struct.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

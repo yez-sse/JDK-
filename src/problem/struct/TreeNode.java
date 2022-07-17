@@ -1,4 +1,4 @@
-package problem.prob;
+package problem.struct;
 
 public class TreeNode {
     public int val;

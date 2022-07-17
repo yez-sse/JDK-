@@ -1,6 +1,6 @@
 package 典.tree;
 
-import problem.prob.TreeNode;
+import problem.struct.TreeNode;
 
 public class L100_相同的树 {
     public boolean isSameTree(TreeNode p, TreeNode q) {

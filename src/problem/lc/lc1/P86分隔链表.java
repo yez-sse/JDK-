@@ -1,6 +1,6 @@
 package problem.lc.lc1;
 
-import problem.one.ListNode;
+import problem.struct.ListNode;
 
 public class P86分隔链表 {
     public ListNode partition(ListNode head, int x) {

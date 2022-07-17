@@ -1,4 +1,4 @@
-package problem.one;
+package problem.struct;
 
 public class ListNode {
     public int val;

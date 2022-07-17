@@ -1,6 +1,6 @@
 package problem.lc.lc1;
 
-import problem.one.ListNode;
+import problem.struct.ListNode;
 
 public class P82删链表重复项 {
     public ListNode deleteDuplicates(ListNode head) {

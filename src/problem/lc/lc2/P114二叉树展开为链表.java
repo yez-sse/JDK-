@@ -1,6 +1,6 @@
 package problem.lc.lc2;
 
-import problem.prob.TreeNode;
+import problem.struct.TreeNode;
 
 public class P114二叉树展开为链表 {
     //这道题首先要找到当前树节点，在搜索树中的前一个节点和后一个节点

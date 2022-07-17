@@ -1,6 +1,6 @@
 package 典.tree;
 
-import problem.prob.TreeNode;
+import problem.struct.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Deque;

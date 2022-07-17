@@ -1,6 +1,6 @@
 package problem.lc.lc2;
 
-import problem.prob.TreeNode;
+import problem.struct.TreeNode;
 
 public class P110平衡二叉树_DFS_典 {
 

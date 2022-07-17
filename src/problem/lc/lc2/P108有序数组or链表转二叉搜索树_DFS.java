@@ -1,7 +1,7 @@
 package problem.lc.lc2;
 
-import problem.one.ListNode;
-import problem.prob.TreeNode;
+import problem.struct.ListNode;
+import problem.struct.TreeNode;
 
 import java.util.Arrays;
 

@@ -1,6 +1,6 @@
 package problem.lc.lc2;
 
-import problem.prob.TreeNode;
+import problem.struct.TreeNode;
 
 public class P104树的最大深度_典 {
 

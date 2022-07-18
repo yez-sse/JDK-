@@ -3,7 +3,7 @@ package problem.one;
 import java.util.HashMap;
 import java.util.Map;
 
-class UnionFind {
+public class UnionFind {
     //记录每个节点的父节点
     private Map<Integer, Integer> parent;
 

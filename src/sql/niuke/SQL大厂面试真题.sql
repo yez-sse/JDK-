@@ -33,3 +33,50 @@ order by retweet_rate desc;
 --     select date_sub(max(start_time), interval 30 DAY )
 --     from tb_user_video_log
 --     )
+
+-- SQL159
+select author,
+       date_format(start_time, '%Y-%m') month,
+       round(sum(case when if_follow=1 then 1 when if_follow=2 then -1 else 0 end) / count(uid), 3) fans_growth_rate,
+       -- 外壳的sum和over是对应的！
+       sum(sum(case when if_follow=1 then 1 when if_follow=2 then -1 else 0 end))
+           over (partition by author order by date_format(start_time, '%Y-%m')) total_fans
+from tb_user_video_log left join tb_video_info using (video_id)
+where year(start_time)=2021
+group by author, month
+order by author, total_fans
+
+-- 160
+select *
+from(
+    select t1.tag, t1.d,
+           sum(t1.if_like_sum) over (partition by t1.tag order by t1.d rows 6 preceding),
+           max(t1.if_retweet_sum) over (partition by t1.tag order by t1.d rows 6 preceding),
+    from(
+        select tag, date(start_time) d, sum(if_like) if_like_sum, sum(if_retweet) if_retweet_sum
+        from tb_user_video_log join tb_video_info using (video_id)
+        group by tag, d
+            ) as t1
+        ) as t2
+where t2.d between '2021-10-01' and '2021-10-03'
+order by t2.tag desc, t2.d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

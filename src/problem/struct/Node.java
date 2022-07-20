@@ -8,10 +8,15 @@ public class Node {
     public Node left;
     public Node right;
     public Node next;
+    public Node random;
     public List<Node> neighbors;
 
     public Node(int val) {
         this.val = val;
+        left = null;
+        right = null;
+        next = null;
+        random = null;
         neighbors = new ArrayList<>();
     }
 }

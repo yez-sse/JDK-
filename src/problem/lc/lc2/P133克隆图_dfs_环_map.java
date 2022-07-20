@@ -5,7 +5,7 @@ import problem.struct.Node;
 import java.util.HashMap;
 import java.util.Map;
 
-public class P133克隆图_dfs_环 {
+public class P133克隆图_dfs_环_map {
 
     Map<Integer, Node> visited = new HashMap<>();
     //不加hash是会陷入死循环的，hash判断是否访问过，可以当作破除死循环的方式

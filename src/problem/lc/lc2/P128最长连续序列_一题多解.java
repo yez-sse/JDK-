@@ -1,6 +1,6 @@
 package problem.lc.lc2;
 
-import problem.one.UnionFind;
+import problem.struct.UnionFind;
 
 import java.util.HashMap;
 import java.util.HashSet;

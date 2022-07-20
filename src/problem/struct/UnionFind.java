@@ -1,4 +1,4 @@
-package problem.one;
+package problem.struct;
 
 import java.util.HashMap;
 import java.util.Map;

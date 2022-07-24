@@ -36,3 +36,9 @@ from
     using (emp_no)
 order by growth;
 
+-- 217
+select emp_no, salary,
+       dense_rank() over (order by salary desc) as s_rank
+from salaries
+where to_date='9999-01-01'
+order by s_rank asc,emp_no asc;

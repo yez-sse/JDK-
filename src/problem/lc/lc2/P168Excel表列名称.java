@@ -12,4 +12,16 @@ public class P168Excel表列名称 {
         sb.reverse();
         return sb.toString();
     }
+
+
+    public int titleToNumber(String columnTitle) {
+        int res = 0;
+        int temp = 1;
+        char[] cs = columnTitle.toCharArray();
+        for (int i = cs.length - 1; i >= 0; i--) {
+            res = res + (cs[i] - 'A' + 1) * temp;
+            temp *= 26;
+        }
+        return res;
+    }
 }

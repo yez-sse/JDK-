@@ -11,4 +11,15 @@ public class P190颠倒二进制位 {
         }
         return res;
     }
+
+    public int hammingWeight(int n) {
+        int res = 0;
+        for (int i = 0; i < 32 && n != 0; i++) {
+            if ((n & 1) == 1) {
+                res++;
+            }
+            n >>>= 1;
+        }
+        return res;
+    }
 }

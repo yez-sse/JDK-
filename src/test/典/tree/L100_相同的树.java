@@ -1,4 +1,4 @@
-package 典.tree;
+package test.典.tree;
 
 import problem.struct.TreeNode;
 

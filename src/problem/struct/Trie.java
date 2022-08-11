@@ -1,15 +1,5 @@
 package problem.struct;
 
-class TrieNode {
-    boolean isEnd;
-    TrieNode[] next;
-
-    public TrieNode() {
-        isEnd = false;
-        next = new TrieNode[26];
-    }
-}
-
 public class Trie {
 
     private TrieNode root;

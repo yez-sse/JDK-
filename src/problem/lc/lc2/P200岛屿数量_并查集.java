@@ -58,3 +58,38 @@ public class P200岛屿数量_并查集 {
         return uf2.getCount() - spaces;
     }
 }
+
+class Solution2 {
+    public int numIslands(char[][] grid) {
+        int resNum = 0;
+        for (int r = 0; r < grid.length; r++) {
+            for (int c = 0; c < grid[0].length; c++) {
+                if (grid[r][c] == '1') {
+                    resNum++;
+                    countIsland(grid, r, c);
+                }
+            }
+        }
+        return resNum;
+    }
+
+    void countIsland(char[][] grid, int r, int c) {
+        if (!inArea(grid, r, c)) {
+            return;
+        }
+        if (grid[r][c] != '1') {
+            return;
+        }
+
+        grid[r][c] = '2';
+
+        countIsland(grid, r - 1, c);
+        countIsland(grid, r + 1, c);
+        countIsland(grid, r, c - 1);
+        countIsland(grid, r, c + 1);
+    }
+
+    boolean inArea(char[][] grid, int r, int c) {
+        return r >= 0 && r < grid.length && c >= 0 && c < grid[0].length;
+    }
+}

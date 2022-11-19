@@ -121,3 +121,35 @@ class Solution2 {
         return r >= 0 && r < grid.length && c >= 0 && c < grid[0].length;
     }
 }
+
+class Solution3 {
+
+    int res = 0;
+
+    public int largestIsland(int[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+        boolean[][] used = new boolean[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                dfs(grid, i, j, 0, 1, used);
+            }
+        }
+        return res;
+    }
+
+    public void dfs(int[][] nums, int i, int j, int curArea, int white, boolean[][] used) {
+        if (i < 0 || i >= nums.length || j < 0 || j >= nums[0].length
+            || (nums[i][j] == 0 && white <= 0) || used[i][j]) {
+            return;
+        }
+
+        used[i][j] = true;
+        res = Math.max(res, curArea + 1);
+        dfs(nums, i + 1, j, curArea + 1, nums[i][j] == 0 ? white - 1 : white, used);
+        dfs(nums, i - 1, j, curArea + 1, nums[i][j] == 0 ? white - 1 : white, used);
+        dfs(nums, i, j + 1, curArea + 1, nums[i][j] == 0 ? white - 1 : white, used);
+        dfs(nums, i, j - 1, curArea + 1, nums[i][j] == 0 ? white - 1 : white, used);
+        used[i][j] = false;
+    }
+}
